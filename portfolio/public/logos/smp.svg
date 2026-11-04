@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" role="img" aria-label="Logo SMP Negeri 2 Sigli">
+  <defs>
+    <clipPath id="inner">
+      <path d="M200 28C128 28 84 44 68 80C58 108 50 200 54 268C56 322 63 366 74 404H326C337 366 344 322 346 268C350 200 342 108 332 80C316 44 272 28 200 28Z"/>
+    </clipPath>
+    <linearGradient id="wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a3fd6"/>
+      <stop offset="1" stop-color="#2a1d9a"/>
+    </linearGradient>
+    <path id="arc" d="M82 204A118 118 0 0 1 318 204"/>
+    <g id="wingL">
+      <path d="M192 306L150 310C118 304 90 282 79 250C71 230 69 210 73 190C100 210 128 226 160 234C176 238 187 243 192 249Z" fill="url(#wing)" stroke="#1a1260" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M84 214C108 232 136 244 170 250" fill="none" stroke="#1a1260" stroke-width="2" stroke-linecap="round"/>
+      <path d="M90 240C112 256 140 266 176 270" fill="none" stroke="#1a1260" stroke-width="2" stroke-linecap="round"/>
+      <path d="M104 266C124 280 148 288 182 291" fill="none" stroke="#1a1260" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- Bingkai luar -->
+  <path d="M200 12C120 12 70 30 52 70C40 100 32 200 36 270C38 330 46 380 60 420H340C354 380 362 330 364 270C368 200 360 100 348 70C330 30 280 12 200 12Z" fill="#fff" stroke="#1b1b1b" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Isi kuning -->
+  <path d="M200 28C128 28 84 44 68 80C58 108 50 200 54 268C56 322 63 366 74 404H326C337 366 344 322 346 268C350 200 342 108 332 80C316 44 272 28 200 28Z" fill="#f7c21b" stroke="#1b1b1b" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Pita putih bawah untuk SIGLI -->
+  <g clip-path="url(#inner)">
+    <rect x="40" y="350" width="320" height="60" fill="#fff"/>
+    <line x1="40" y1="350" x2="360" y2="350" stroke="#1b1b1b" stroke-width="3"/>
+  </g>
+  <text x="200" y="391" text-anchor="middle" textLength="132" lengthAdjust="spacingAndGlyphs" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="40" fill="#111">SIGLI</text>
+
+  <!-- Teks melengkung -->
+  <text font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="34" fill="#111" stroke="#fff" stroke-width="3.5" paint-order="stroke" stroke-linejoin="round">
+    <textPath href="#arc" startOffset="50%" text-anchor="middle" textLength="262" lengthAdjust="spacingAndGlyphs">SMP NEGERI 2</textPath>
+  </text>
+
+  <!-- Sayap -->
+  <use href="#wingL"/>
+  <use href="#wingL" transform="translate(400 0) scale(-1 1)"/>
+
+  <!-- Pena -->
+  <path d="M200 236C214 260 221 284 215 304L200 326L185 304C179 284 186 260 200 236Z" fill="#111" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M200 270V318" stroke="#f7c21b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="268" r="5" fill="#f7c21b"/>
+
+  <!-- Buku terbuka -->
+  <g fill="#fff" stroke="#1b1b1b" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M200 196Q170 176 120 182L127 160Q174 154 200 174Z"/>
+    <path d="M200 196Q230 176 280 182L273 160Q226 154 200 174Z"/>
+    <path d="M200 184Q172 166 126 170L132 148Q176 144 200 162Z"/>
+    <path d="M200 184Q228 166 274 170L268 148Q224 144 200 162Z"/>
+  </g>
+  <path d="M200 162V196" stroke="#1b1b1b" stroke-width="2.2"/>
+
+  <!-- Bunga -->
+  <g fill="#fff" stroke="#1b1b1b" stroke-width="2" stroke-linejoin="round">
+    <ellipse cx="200" cy="108" rx="10" ry="15" transform="rotate(0 200 122)"/>
+    <ellipse cx="200" cy="108" rx="10" ry="15" transform="rotate(72 200 122)"/>
+    <ellipse cx="200" cy="108" rx="10" ry="15" transform="rotate(144 200 122)"/>
+    <ellipse cx="200" cy="108" rx="10" ry="15" transform="rotate(216 200 122)"/>
+    <ellipse cx="200" cy="108" rx="10" ry="15" transform="rotate(288 200 122)"/>
+  </g>
+  <circle cx="200" cy="122" r="7" fill="#f2a900" stroke="#1b1b1b" stroke-width="2"/>
+</svg>

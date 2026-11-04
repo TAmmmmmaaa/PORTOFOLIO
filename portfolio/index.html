@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050203" />
+    <script>
+      // Pasang tema sebelum halaman tampil supaya tidak berkedip. Urutan: pilihan tersimpan > pengaturan perangkat.
+      ;(function () {
+        var t = 'dark'
+        try {
+          var s = localStorage.getItem('tama-theme')
+          if (s === 'light' || s === 'dark') t = s
+          else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) t = 'light'
+        } catch (e) {}
+        document.documentElement.setAttribute('data-theme', t)
+        var m = document.querySelector('meta[name="theme-color"]')
+        if (m) m.setAttribute('content', t === 'light' ? '#ffb9a6' : '#050203')
+      })()
+    </script>
+    <meta name="description" content="Portofolio Tama Rachidi, Junior Developer dan mahasiswa Teknik Informatika." />
+    <title>Tama Rachidi | Portofolio</title>
+
+    <!-- Open Graph & Twitter: preview saat link dibagikan. %SITE_URL% diisi otomatis (lihat vite.config.js). -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Tama Rachidi" />
+    <meta property="og:title" content="Tama Rachidi | Portofolio" />
+    <meta property="og:description" content="Junior Developer dan mahasiswa Teknik Informatika yang suka mengubah ide menjadi web yang terasa hidup." />
+    <meta property="og:image" content="%SITE_URL%/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Tama Rachidi, Junior Developer" />
+    <!--OG_URL-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tama Rachidi | Portofolio" />
+    <meta name="twitter:description" content="Junior Developer dan mahasiswa Teknik Informatika yang suka mengubah ide menjadi web yang terasa hidup." />
+    <meta name="twitter:image" content="%SITE_URL%/og-image.jpg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
